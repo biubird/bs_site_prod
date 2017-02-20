@@ -15,6 +15,7 @@ gem 'sass-rails', '~> 5.0'
 
 gem 'pg'
 gem 'rails_12factor'
+gem 'mysql2', '>= 0.3.18', '< 0.5'
 
 gem 'react-rails', github: 'reactjs/react-rails'
 
