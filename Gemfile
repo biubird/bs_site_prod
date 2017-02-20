@@ -13,6 +13,9 @@ gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 
+gem 'pg'
+gem 'rails_12factor'
+
 gem 'react-rails', github: 'reactjs/react-rails'
 
 gem 'bootstrap-sass'
