@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Tour.create!(date_time: '09/02/2017', venue: 'Altamont Theatre', location: 'Ashville, NC', imgUrl: 'www.thealtamonttheatre.com', img: 'assets/portfolio/altamont-logo-lrg-1.jpg')
