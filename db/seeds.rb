@@ -80,10 +80,10 @@ Tour.create!(date_time: 'Saturday, November 4, 8:00pm', venue: 'Milliken Auditor
 
 Tour.create!(date_time: 'Sunday, November 5, 7:30pm', venue: 'The Ark', location: 'Ann Arbor, MI', imgUrl: 'http://www.theark.org', img: 'assets/portfolio/ark.jpg')
 
-Tour.create!(date_time: 'Saturday, January 20, 2018, 7:30pm', venue: 'Carnegie Lecture Hall', location: 'Pittsburgh, PA', imgUrl: 'http://www.calliopehouse.org', img: 'assets/portfolio/calliope.png')
+Tour.create!(date_time: 'Saturday, January 20, (2018) 7:30pm', venue: 'Carnegie Lecture Hall', location: 'Pittsburgh, PA', imgUrl: 'http://www.calliopehouse.org', img: 'assets/portfolio/calliope.png')
 
-Tour.create!(date_time: 'Friday, March 9, 7:30pm', venue: 'Stoughton Opera House', location: 'Stoughton, WI', imgUrl: 'http://www.stoughtonoperahouse.com/', img: 'assets/portfolio/stoughton.png')
+Tour.create!(date_time: 'Friday, March 9, (2018) 7:30pm', venue: 'Stoughton Opera House', location: 'Stoughton, WI', imgUrl: 'http://www.stoughtonoperahouse.com/', img: 'assets/portfolio/stoughton.png')
 
-Tour.create!(date_time: 'Saturday, March 10, 7:30pm', venue: 'Mabel Tainter Center for the Arts', location: 'Menomonie, WI', imgUrl: 'http://www.mabeltainter.org', img: 'assets/portfolio/mabel.jpg')
+Tour.create!(date_time: 'Saturday, March 10, (2018) 7:30pm', venue: 'Mabel Tainter Center for the Arts', location: 'Menomonie, WI', imgUrl: 'http://www.mabeltainter.org', img: 'assets/portfolio/mabel.jpg')
 
 puts "Created #{Tour.count} tours"
