@@ -48,8 +48,6 @@ Tour.create!(date_time: 'Thursday, May 25, TBD', venue: 'Mudbug Madness', locati
 
 Tour.create!(date_time: 'Saturday, May 27 - Sunday, May 28, TBD', venue: 'Cajun & Blues Music Festival', location: 'Simi Valley, CA', imgUrl: 'http://www.simicajun.org/schedule/', img: 'assets/portfolio/simi.jpg')
 
-Tour.create!(date_time: 'June 28 - July 4, TBD', venue: 'Smithsonian Folklife Festival', location: 'Washington, DC', imgUrl: 'http://www.festival.si.edu/2017/nea-national-heritage-fellows/smithsonian', img: 'assets/portfolio/smithsonian.jpg')
-
 Tour.create!(date_time: 'Friday, August 25, 8:00pm', venue: 'Shalin Liu Performance Center', location: 'Rockport, MA', imgUrl: 'http://rockportmusic.org/shalin-liu-performance-center/', img: 'assets/portfolio/shalin.jpg')
 
 Tour.create!(date_time: 'Saturday, August 26, TBD', venue: 'Colonial Theatre', location: 'Bethlehem, MA', imgUrl: 'http://bethlehemcolonialtheatre.org/', img: 'assets/portfolio/colonial.jpg')
