@@ -38,7 +38,7 @@ Tour.create!(date_time: 'Friday, April 21, 7:00pm', venue: 'Museum of Making Mus
 
 Tour.create!(date_time: 'Saturday, April 22, 8:00pm', venue: "McCabe's Guitar Shop", location: 'Santa Monica, CA', imgUrl: 'https://www.mccabes.com/concerts/', img: 'assets/portfolio/mccabes.jpg')
 
-Tour.create!(date_time: 'Saturday, May 6, 2:45pm', venue: 'New Orleans Jazz & Heritage Festival- Fais Do-Do Stage', location: 'New Orleans, LA', imgUrl: 'http://www.nojazzfest.com/', img: 'assets/portfolio/nojazz.jpg')
+Tour.create!(date_time: 'Saturday, May 6, 2:45pm', venue: 'New Orleans Jazz & Heritage Festival', location: 'New Orleans, LA (Fais Do-Do Stage)', imgUrl: 'http://www.nojazzfest.com/', img: 'assets/portfolio/nojazz.jpg')
 
 Tour.create!(date_time: 'Sunday, May 14, 3:00pm', venue: 'Paradise Bar and Grill', location: 'Pensacola Beach, FL', imgUrl: 'http://www.paradisebar-grill.com/', img: 'assets/portfolio/paradise.jpg')
 
