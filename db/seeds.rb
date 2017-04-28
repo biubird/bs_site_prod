@@ -48,7 +48,7 @@ Tour.create!(date_time: 'Thursday, May 25, TBD', venue: 'Mudbug Madness', locati
 
 Tour.create!(date_time: 'Tuesday, July 4, 7:00pm', venue: 'Songs at Mirror Lake Music Series', location: 'Lake Placid, NY', imgUrl: 'http://www.songsatmirrorlake.com', img: 'assets/portfolio/saml.png')
 
-Tour.create!(date_time: 'Saturday, July 29, 8:30pm', venue: 'Towne Crier Cafe', location: 'Beacon, NY', imgUrl: 'http://www.townecrier.com', img: 'assets/portfolio/townecrier.png')
+Tour.create!(date_time: 'Saturday, July 29, 8:30pm', venue: 'Towne Crier Cafe', location: 'Beacon, NY', imgUrl: 'http://www.townecrier.com', img: 'assets/portfolio/towncrier.png')
 
 Tour.create!(date_time: 'Sunday, July 30, 7:00pm', venue: 'Music Haven Concert Series', location: 'Schenectady, NY', imgUrl: 'http://www.musichavenstage.org', img: 'assets/portfolio/musichaven.png')
 
@@ -78,12 +78,12 @@ Tour.create!(date_time: 'Thursday, October 5, 7:30pm', venue: 'Fox Theater', loc
 
 Tour.create!(date_time: 'Saturday, November 4, 8:00pm', venue: 'Milliken Auditorium', location: 'Traverse City, MI', imgUrl: 'http://www.dennosmuseum.org/milliken/', img: 'assets/portfolio/dennos.png')
 
-Tour.create!(date_time: 'Sunday, November 5, 7:30pm', venue: 'The Ark', location: 'Ann Arbor, MI', imgUrl: 'http://www.theark.org', img: 'assets/portfolio/ark.jpg')
+Tour.create!(date_time: 'Sunday, November 5, 7:30pm', venue: 'The Ark', location: 'Ann Arbor, MI', imgUrl: 'http://www.theark.org', img: 'assets/portfolio/ark.png')
 
 Tour.create!(date_time: 'Saturday, January 20, (2018) 7:30pm', venue: 'Carnegie Lecture Hall', location: 'Pittsburgh, PA', imgUrl: 'http://www.calliopehouse.org', img: 'assets/portfolio/calliope.png')
 
 Tour.create!(date_time: 'Friday, March 9, (2018) 7:30pm', venue: 'Stoughton Opera House', location: 'Stoughton, WI', imgUrl: 'http://www.stoughtonoperahouse.com/', img: 'assets/portfolio/stoughton.png')
 
-Tour.create!(date_time: 'Saturday, March 10, (2018) 7:30pm', venue: 'Mabel Tainter Center for the Arts', location: 'Menomonie, WI', imgUrl: 'http://www.mabeltainter.org', img: 'assets/portfolio/mabel.jpg')
+Tour.create!(date_time: 'Saturday, March 10, (2018) 7:30pm', venue: 'Mabel Tainter Center for the Arts', location: 'Menomonie, WI', imgUrl: 'http://www.mabeltainter.org', img: 'assets/portfolio/mabel.png')
 
 puts "Created #{Tour.count} tours"
