@@ -46,6 +46,8 @@ Tour.create!(date_time: 'Tuesday, May 16, 6:00pm', venue: 'Paradise Bar and Gril
 
 Tour.create!(date_time: 'Thursday, May 25, TBD', venue: 'Mudbug Madness', location: 'Shreveport, LA', imgUrl: 'http://mudbugmadness.com/', img: 'assets/portfolio/mudbug.jpg')
 
+Tour.create!(date_time: 'Saturday, May 27 - Sunday, May 28, TBD', venue: 'Cajun & Blues Music Festival', location: 'Simi Valley, CA', imgUrl: 'http://www.simicajun.org/schedule/', img: 'assets/portfolio/simi.jpg')
+
 Tour.create!(date_time: 'Tuesday, July 4, 7:00pm', venue: 'Songs at Mirror Lake Music Series', location: 'Lake Placid, NY', imgUrl: 'http://www.songsatmirrorlake.com', img: 'assets/portfolio/saml.png')
 
 Tour.create!(date_time: 'Saturday, July 29, 8:30pm', venue: 'Towne Crier Cafe', location: 'Beacon, NY', imgUrl: 'http://www.townecrier.com', img: 'assets/portfolio/towncrier.png')
