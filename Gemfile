@@ -13,11 +13,11 @@ gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 
-gem 'pg'
-gem 'rails_12factor'
-gem 'mysql2', '>= 0.3.18', '< 0.5'
-
-gem 'react-rails', github: 'reactjs/react-rails'
+## commenting out for removal 
+# gem 'pg'
+# gem 'rails_12factor'
+# gem 'mysql2', '>= 0.3.18', '< 0.5'
+# gem 'react-rails', github: 'reactjs/react-rails'
 
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
@@ -45,6 +45,11 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'capybara'
 end
 
 group :development do
