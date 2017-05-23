@@ -208,10 +208,6 @@ DEPENDENCIES
   puma (~> 3.0)
   rails (~> 5.0.1)
   rails_12factor
-<<<<<<< HEAD
-=======
-  react-rails!
->>>>>>> 1-add-fan-feature
   rspec-rails
   sass-rails (~> 5.0)
   spring

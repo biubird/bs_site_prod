@@ -34272,3 +34272,181 @@ Completed 200 OK in 8068ms (Views: 8034.0ms | ActiveRecord: 0.0ms)
 Completed 200 OK in 5709ms (Views: 333.7ms | ActiveRecord: 38.4ms)
 
 
+Started GET "/" for ::1 at 2017-05-23 15:45:53 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mTour Load (1.8ms)[0m  [1m[34mSELECT `tours`.* FROM `tours`[0m
+  Rendered tour/_list.html.erb (41.5ms)
+  Rendered pages/home.html.erb within layouts/application (48.0ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 6713ms (Views: 6683.0ms | ActiveRecord: 11.5ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  [1m[35m (136.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS `beausoleil_site`[0m
+  [1m[35m (34.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS `beausoleil_site_test`[0m
+  [1m[35m (15.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) PRIMARY KEY) ENGINE=InnoDB[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT DATABASE() as db[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT GET_LOCK('5950012209069195855', 0);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateTours (20170112224017)
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE `tours` (`id` int AUTO_INCREMENT PRIMARY KEY, `date_time` varchar(255) NOT NULL, `venue` varchar(50) NOT NULL, `location` varchar(50) NOT NULL, `imgUrl` varchar(255) NOT NULL, `img` varchar(255) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20170112224017')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2017-05-23 20:48:45', '2017-05-23 20:48:45')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT RELEASE_LOCK('5950012209069195855')[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (2.8ms)[0m  [1m[35mSHOW CREATE TABLE `tours`[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSHOW TABLE STATUS LIKE 'tours'[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Thursday, February 9, TBD', 'Altamont Theatre', 'Asheville, NC', 'http://thealtamonttheatre.com', 'assets/portfolio/altamont-logo-lrg-1.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Friday, February 10, 7:30pm', 'Hiwassee Performing Arts Center', 'Madisonville, TN', 'https://www.hiwassee.edu/events', 'assets/portfolio/Hiwasseelogo.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Saturday, February 11, 7:30pm', 'Alhambra Theatre', 'Hopkinsville, KY', 'http://www.pennyroyalarts.org', 'assets/portfolio/alhambratheatre.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Sunday, February 12, 7:00pm', 'Buckman Performing Arts Center', 'Memphis, TN', 'http://www.stmarysschool.org/page.cfm?p=668', 'assets/portfolio/buckmanpac.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Friday, February 17, 8:00pm', 'Center for the Performing Arts', 'Bonita Springs, FL', 'http://artcenterbonita.org', 'assets/portfolio/bonitasprings.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Saturday, February 18, 8:00pm', 'Palladium Theater', 'St. Petersburg, FL', 'http://www.mypalladium.org', 'assets/portfolio/palladium.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Sunday, February 19, 8:30pm', 'Original Cafe Eleven', 'St. Augustine, FL', 'http://www.originalcafe11.com', 'assets/portfolio/cafe11.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Thursday, March 2, 6:30pm', 'Laurie  Auditorium', 'San Antonio, TX', 'https://new.trinity.edu/about-trinity/campus/laurie-auditorium', 'assets/portfolio/laurie.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Friday, March 3, 7:30pm', 'Laurie  Auditorium', 'San Antonio, TX', 'https://new.trinity.edu/about-trinity/campus/laurie-auditorium', 'assets/portfolio/laurie.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Saturday, March 4, 7:30pm', 'Reif  Performing Arts Center', 'Grand Rapids, MN', 'http://www.reifcenter.org', 'assets/portfolio/reif.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Saturday, April 15, 7:30pm', 'Taylor-Meade Performing Arts Center', 'Forest Grove, OR', 'https://www.pacificu.edu/about-us/events/performing-arts-series', 'assets/portfolio/pacificu.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Monday, April 17, 8:30pm', 'Mystic Theatre', 'Petaluma, CA', 'http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&eventId=7175985&pl=mystic', 'assets/portfolio/mystic.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Tuesday, April 18, 6:30pm', 'Christopher Cohan Performing Arts Center', 'San Luis Obispo, CA', 'https://calpolyarts.org/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=8B1E82DC-8C14-4BCB-8C22-799ABE4A68A9', 'assets/portfolio/calpolyarts.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Wednesday, April 19, 7:30pm', 'Spanos Theater', 'San Luis Obispo, CA', 'https://calpolyarts.org/Online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=8B1E82DC-8C14-4BCB-8C22-799ABE4A68A9', 'assets/portfolio/calpolyarts.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Friday, April 21, 7:00pm', 'Museum of Making Music', 'Carlsbad, CA', 'https://www.museumofmakingmusic.org/events/beausoleil', 'assets/portfolio/museummusic.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Saturday, April 22, 8:00pm', 'McCabe\'s Guitar Shop', 'Santa Monica, CA', 'https://www.mccabes.com/concerts/', 'assets/portfolio/mccabes.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Saturday, May 6, 2:45pm', 'New Orleans Jazz & Heritage Festival', 'New Orleans, LA (Fais Do-Do Stage)', 'http://www.nojazzfest.com/', 'assets/portfolio/nojazz.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Sunday, May 14, 3:00pm', 'Paradise Bar and Grill', 'Pensacola Beach, FL', 'http://www.paradisebar-grill.com/', 'assets/portfolio/paradise.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Tuesday, May 16, 6:00pm', 'Paradise Bar and Grill', 'Pensacola Beach, FL', 'http://www.paradisebar-grill.com/', 'assets/portfolio/paradise.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Thursday, May 25, TBD', 'Mudbug Madness', 'Shreveport, LA', 'http://mudbugmadness.com/', 'assets/portfolio/mudbug.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Saturday, May 27 - Sunday, May 28, TBD', 'Cajun & Blues Music Festival', 'Simi Valley, CA', 'http://www.simicajun.org/schedule/', 'assets/portfolio/simi.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Tuesday, July 4, 7:00pm', 'Songs at Mirror Lake Music Series', 'Lake Placid, NY', 'http://www.songsatmirrorlake.com', 'assets/portfolio/saml.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Friday, July 28, 8:00pm', 'The Newton Theatre', 'Newton, NJ', 'http://www.thenewtontheatre.com/acts/beausoleil-2017.html', 'assets/portfolio/newton.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Saturday, July 29, 8:30pm', 'Towne Crier Cafe', 'Beacon, NY', 'http://www.townecrier.com', 'assets/portfolio/towncrier.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Sunday, July 30, 7:00pm', 'Music Haven Concert Series', 'Schenectady, NY', 'http://www.musichavenstage.org', 'assets/portfolio/musichaven.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Wednesday, August 23, 7:30pm', 'Iron Horse', 'Northhampton, MA', 'http://www.iheg.com', 'assets/portfolio/ironhorse.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Thursday, August 24, 7:00pm', 'The Opera House at Boothbay Harbor', 'Boothbay Harbor, ME', 'http://www.boothbayoperahouse.com', 'assets/portfolio/boothbay.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Friday, August 25, 8:00pm', 'Shalin Liu Performance Center', 'Rockport, MA', 'http://rockportmusic.org/shalin-liu-performance-center/', 'assets/portfolio/shalin.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Saturday, August 26, TBD', 'Colonial Theatre', 'Bethlehem, MA', 'http://bethlehemcolonialtheatre.org/', 'assets/portfolio/colonial.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Saturday, August 27, 8:00pm', 'Criterion Theatre', 'Bar Harbor, ME', 'http://www.criteriontheatre.org', 'assets/portfolio/criterion.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Wednesday, August 30, 8:00pm', 'Rams Head On Stage', 'Annapolis, MD', 'http://www.ramsheadonstage.com', 'assets/portfolio/ramshead.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Thursday, August 31, 7:30pm', 'The Hamilton', 'Washington, DC', 'http://www.thehamiltondc.com', 'assets/portfolio/hamdc.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Friday, September 1, 8:00pm', 'Tin Pan', 'Richmond, VA', 'http://www.tinpanrva.com', 'assets/portfolio/tinpan.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Sunday, September 3, 8:00pm', 'City Winery Atlanta', 'Atlanta, GA', 'http://www.citywinery.com/atlanta/', 'assets/portfolio/citywineryat.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Saturday, September 23, 7:30pm', 'Carnegie Lecture Hall', 'Pittsburgh, PA', 'http://calliopehouse.org/', 'assets/portfolio/calliope.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Thursday, September 28, 8:00pm', 'Yoshi\'s Oakland', 'Oakland, CA', 'http://www.yoshis.com', 'assets/portfolio/yoshis.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Saturday, September 30, 8:00pm', 'Humboldt State University Center Arts', 'Arcata, CA', 'https://centerarts.humboldt.edu', 'assets/portfolio/humboldt.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Thursday, October 5, 7:30pm', 'Fox Theater', 'Spokane, WA', 'http://www.foxtheaterspokane.com/', 'assets/portfolio/foxtheater.jpg', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Saturday, November 4, 8:00pm', 'Milliken Auditorium', 'Traverse City, MI', 'http://www.dennosmuseum.org/milliken/', 'assets/portfolio/dennos.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Sunday, November 5, 7:30pm', 'The Ark', 'Ann Arbor, MI', 'http://www.theark.org', 'assets/portfolio/ark.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Thursday, March 8, (2018) 8:00pm', 'SPACE', 'Evanston, IL', 'http://www.evanstonspace.com', 'assets/portfolio/space.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Friday, March 9, (2018) 7:30pm', 'Stoughton Opera House', 'Stoughton, WI', 'http://www.stoughtonoperahouse.com/', 'assets/portfolio/stoughton.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Saturday, March 10, (2018) 7:30pm', 'Mabel Tainter Center for the Arts', 'Menomonie, WI', 'http://www.mabeltainter.org', 'assets/portfolio/mabel.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Thursday & Friday, April 26th-27th, (2018) (Workshops)TBD', 'Trinity-Pawling School', 'Pawling, NY', 'http://www.pawlingconcertseries.org', 'assets/portfolio/pawling.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Friday, April 27th, (2018) 8:00pm', 'Trinity-Pawling School', 'Pawling, NY', 'http://www.pawlingconcertseries.org', 'assets/portfolio/pawling.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `tours` (`date_time`, `venue`, `location`, `imgUrl`, `img`, `created_at`, `updated_at`) VALUES ('Saturday, May 19th, (2018) TBD', 'Paul W. Ogle Cultural & Community Center', 'New Albany, NY', 'http://www.ius.edu/oglecenter', 'assets/portfolio/ogle.png', '2017-05-23 20:48:52', '2017-05-23 20:48:52')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `tours`[0m
