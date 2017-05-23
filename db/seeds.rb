@@ -50,6 +50,8 @@ Tour.create!(date_time: 'Saturday, May 27 - Sunday, May 28, TBD', venue: 'Cajun 
 
 Tour.create!(date_time: 'Tuesday, July 4, 7:00pm', venue: 'Songs at Mirror Lake Music Series', location: 'Lake Placid, NY', imgUrl: 'http://www.songsatmirrorlake.com', img: 'assets/portfolio/saml.png')
 
+Tour.create!(date_time: 'Friday, July 28, 8:00pm', venue: 'The Newton Theatre', location: 'Newton, NJ', imgUrl: 'http://www.thenewtontheatre.com/acts/beausoleil-2017.html', img: 'assets/portfolio/newton.png')
+
 Tour.create!(date_time: 'Saturday, July 29, 8:30pm', venue: 'Towne Crier Cafe', location: 'Beacon, NY', imgUrl: 'http://www.townecrier.com', img: 'assets/portfolio/towncrier.png')
 
 Tour.create!(date_time: 'Sunday, July 30, 7:00pm', venue: 'Music Haven Concert Series', location: 'Schenectady, NY', imgUrl: 'http://www.musichavenstage.org', img: 'assets/portfolio/musichaven.png')
@@ -72,6 +74,8 @@ Tour.create!(date_time: 'Friday, September 1, 8:00pm', venue: 'Tin Pan', locatio
 
 Tour.create!(date_time: 'Sunday, September 3, 8:00pm', venue: 'City Winery Atlanta', location: 'Atlanta, GA', imgUrl: 'http://www.citywinery.com/atlanta/', img: 'assets/portfolio/citywineryat.png')
 
+Tour.create!(date_time: 'Saturday, September 23, 7:30pm', venue: 'Carnegie Lecture Hall', location: 'Pittsburgh, PA', imgUrl: 'http://calliopehouse.org/', img: 'assets/portfolio/calliope.png')
+
 Tour.create!(date_time: 'Thursday, September 28, 8:00pm', venue: "Yoshi's Oakland", location: 'Oakland, CA', imgUrl: 'http://www.yoshis.com', img: 'assets/portfolio/yoshis.png')
 
 Tour.create!(date_time: 'Saturday, September 30, 8:00pm', venue: 'Humboldt State University Center Arts', location: 'Arcata, CA', imgUrl: 'https://centerarts.humboldt.edu', img: 'assets/portfolio/humboldt.png')
@@ -82,10 +86,16 @@ Tour.create!(date_time: 'Saturday, November 4, 8:00pm', venue: 'Milliken Auditor
 
 Tour.create!(date_time: 'Sunday, November 5, 7:30pm', venue: 'The Ark', location: 'Ann Arbor, MI', imgUrl: 'http://www.theark.org', img: 'assets/portfolio/ark.png')
 
-Tour.create!(date_time: 'Saturday, January 20, (2018) 7:30pm', venue: 'Carnegie Lecture Hall', location: 'Pittsburgh, PA', imgUrl: 'http://www.calliopehouse.org', img: 'assets/portfolio/calliope.png')
+Tour.create!(date_time: 'Thursday, March 8, (2018) 8:00pm', venue: 'SPACE', location: 'Evanston, IL', imgUrl: 'http://www.evanstonspace.com', img: 'assets/portfolio/space.png')
 
 Tour.create!(date_time: 'Friday, March 9, (2018) 7:30pm', venue: 'Stoughton Opera House', location: 'Stoughton, WI', imgUrl: 'http://www.stoughtonoperahouse.com/', img: 'assets/portfolio/stoughton.png')
 
 Tour.create!(date_time: 'Saturday, March 10, (2018) 7:30pm', venue: 'Mabel Tainter Center for the Arts', location: 'Menomonie, WI', imgUrl: 'http://www.mabeltainter.org', img: 'assets/portfolio/mabel.png')
+
+Tour.create!(date_time: 'Thursday & Friday, April 26th-27th, (2018) (Workshops)TBD', venue: 'Trinity-Pawling School', location: 'Pawling, NY', imgUrl: 'http://www.pawlingconcertseries.org', img: 'assets/portfolio/pawling.png')
+
+Tour.create!(date_time: 'Friday, April 27th, (2018) 8:00pm', venue: 'Trinity-Pawling School', location: 'Pawling, NY', imgUrl: 'http://www.pawlingconcertseries.org', img: 'assets/portfolio/pawling.png')
+
+Tour.create!(date_time: 'Saturday, May 19th, (2018) TBD', venue: 'Paul W. Ogle Cultural & Community Center', location: 'New Albany, NY', imgUrl: 'http://www.ius.edu/oglecenter', img: 'assets/portfolio/ogle.png')
 
 puts "Created #{Tour.count} tours"
