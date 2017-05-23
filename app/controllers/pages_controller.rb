@@ -17,4 +17,8 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  def fans
+    @fans = Fan.new
+  end
 end
