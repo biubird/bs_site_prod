@@ -73,4 +73,6 @@ group :test do
   gem "selenium-webdriver"
   gem "chromedriver-helper"
   gem "launchy"
+  gem "pry-rescue"
+  gem "pry-stack_explorer"
 end
