@@ -3,7 +3,29 @@
 # The generated `.rspec` file contains `--require spec_helper` which will cause
 # this file to always be loaded, without a need to explicitly require it in any
 # files.
-#
+ENV['RAILS_ENV'] ||= 'test'
+require File.expand_path('../../config/environment', __FILE__)
+require 'spec_helper'
+require 'rspec/rails'
+require 'capybara/rspec'
+require 'selenium-webdriver'
+
+Capybara.register_driver :selenium_chrome do |app|
+  Capybara::Selenium::Driver.new(app, browser: :chrome)
+end
+
+Capybara.current_driver = :selenium_chrome
+Capybara.javascript_driver = :selenium_chrome
+Capybara.run_server = true
+Capybara.server_port = 3000
+Capybara.default_selector = :css 
+Capybara.default_max_wait_time = 15
+Capybara.app_host = "http://localhost:3000"
+
+def teardown
+  Capybara.reset_session!
+end
+
 # Given that it is always loaded, you are encouraged to keep this file as
 # light-weight as possible. Requiring heavyweight dependencies from this file
 # will add to the boot time of your test suite on EVERY test run, even for an
