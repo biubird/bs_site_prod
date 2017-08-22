@@ -98,7 +98,7 @@ Tour.create!(date_time: 'Saturday, March 10, (2018) 7:30pm', venue: 'Mabel Taint
 
 Tour.create!(date_time: 'Friday, March 16, (2018) 7:00pm', venue: 'Music at the Mint', location: 'New Orleans, LA', imgUrl: 'http://www.musicatthemint.org/', img: 'assets/portfolio/mint.jpg')
 
-Tour.create!(date_time: 'Friday, April 13 (2018) 8:00pm', venue: 'The Arts Center', location: 'Carrboro, NC', imgUrl: 'http://artscenterlive.org/', img: 'assets/portfolio/artscenter.jpg'
+Tour.create!(date_time: 'Friday, April 13 (2018) 8:00pm', venue: 'The Arts Center', location: 'Carrboro, NC', imgUrl: 'http://artscenterlive.org/', img: 'assets/portfolio/artscenter.jpg')
 
 Tour.create!(date_time: 'Saturday, April 14 (2018) TBD', venue: 'Spring Skunk Music Festival', location: 'Greer, SC', imgUrl: 'http://albinoskunk.com/', img: 'assets/portfolio/skunk.jpg')
 
