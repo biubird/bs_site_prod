@@ -96,6 +96,6 @@ Tour.create!(date_time: 'Thursday & Friday, April 26th-27th, (2018) (Workshops)T
 
 Tour.create!(date_time: 'Friday, April 27th, (2018) 8:00pm', venue: 'Trinity-Pawling School', location: 'Pawling, NY', imgUrl: 'http://www.pawlingconcertseries.org', img: 'assets/portfolio/pawling.png')
 
-Tour.create!(date_time: 'Saturday, May 19th, (2018) TBD', venue: 'Paul W. Ogle Cultural & Community Center', location: 'New Albany, NY', imgUrl: 'http://www.ius.edu/oglecenter', img: 'assets/portfolio/ogle.png')
+Tour.create!(date_time: 'Saturday, May 19th, (2018) TBD', venue: 'Paul W. Ogle Cultural & Community Center', location: 'New Albany, IN', imgUrl: 'http://www.ius.edu/oglecenter', img: 'assets/portfolio/ogle.png')
 
 puts "Created #{Tour.count} tours"

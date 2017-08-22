@@ -1,5 +1,5 @@
 class TourController < ApplicationController
   def list
-    @tours = Tour.all
+    @tours = Tour.upcoming
   end
 end
