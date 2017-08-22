@@ -82,6 +82,10 @@ Tour.create!(date_time: 'Saturday, September 30, 8:00pm', venue: 'Humboldt State
 
 Tour.create!(date_time: 'Thursday, October 5, 7:30pm', venue: 'Fox Theater', location: 'Spokane, WA', imgUrl: 'http://www.foxtheaterspokane.com/', img: 'assets/portfolio/foxtheater.jpg')
 
+Tour.create!(date_time: 'Friday, October 6, 7:00pm', venue: 'Power House Theatre', location: 'Walla Walla, WA', imgUrl: 'http://phtww.com/', img: 'assets/portfolio/powerhouse.jpg')
+
+Tour.create!(date_time: 'Saturday, October 7, 8:00pm', venue: 'Alberta Rose Theatre', location: 'Portland, OR', imgUrl: 'http://www.albertarosetheatre.com/', img: 'assets/portfolio/albertarose.jpg')
+
 Tour.create!(date_time: 'Saturday, November 4, 8:00pm', venue: 'Milliken Auditorium', location: 'Traverse City, MI', imgUrl: 'http://www.dennosmuseum.org/milliken/', img: 'assets/portfolio/dennos.png')
 
 Tour.create!(date_time: 'Sunday, November 5, 7:30pm', venue: 'The Ark', location: 'Ann Arbor, MI', imgUrl: 'http://www.theark.org', img: 'assets/portfolio/ark.png')
@@ -91,6 +95,12 @@ Tour.create!(date_time: 'Thursday, March 8, (2018) 8:00pm', venue: 'SPACE', loca
 Tour.create!(date_time: 'Friday, March 9, (2018) 7:30pm', venue: 'Stoughton Opera House', location: 'Stoughton, WI', imgUrl: 'http://www.stoughtonoperahouse.com/', img: 'assets/portfolio/stoughton.png')
 
 Tour.create!(date_time: 'Saturday, March 10, (2018) 7:30pm', venue: 'Mabel Tainter Center for the Arts', location: 'Menomonie, WI', imgUrl: 'http://www.mabeltainter.org', img: 'assets/portfolio/mabel.png')
+
+Tour.create!(date_time: 'Friday, March 16, (2018) 7:00pm', venue: 'Music at the Mint', location: 'New Orleans, LA', imgUrl: 'http://www.musicatthemint.org/', img: 'assets/portfolio/mint.jpg')
+
+Tour.create!(date_time: 'Friday, April 13 (2018) 8:00pm', venue: 'The Arts Center', location: 'Carrboro, NC', imgUrl: 'http://artscenterlive.org/', img: 'assets/portfolio/artscenter.jpg'
+
+Tour.create!(date_time: 'Saturday, April 14 (2018) TBD', venue: 'Spring Skunk Music Festival', location: 'Greer, SC', imgUrl: 'http://albinoskunk.com/', img: 'assets/portfolio/skunk.jpg')
 
 Tour.create!(date_time: 'Thursday & Friday, April 26th-27th, (2018) (Workshops)TBD', venue: 'Trinity-Pawling School', location: 'Pawling, NY', imgUrl: 'http://www.pawlingconcertseries.org', img: 'assets/portfolio/pawling.png')
 
