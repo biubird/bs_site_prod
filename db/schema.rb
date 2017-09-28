@@ -10,16 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170112224017) do
+ActiveRecord::Schema.define(version: 20170928002345) do
 
   create_table "tours", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "date_time",             null: false
     t.string   "venue",      limit: 50, null: false
     t.string   "location",   limit: 50, null: false
     t.string   "imgUrl",                null: false
     t.string   "img",                   null: false
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false
+    t.date     "gig_date"
+    t.string   "gig_time"
   end
 
 end
