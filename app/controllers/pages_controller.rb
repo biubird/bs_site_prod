@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    @tours = Tour.where('gig_date > ?', Date.today).order(gig_date: :asc)
+    @tours = Tour.where('gig_date >= ?', Date.today).order(gig_date: :asc)
   end
 
   def about
