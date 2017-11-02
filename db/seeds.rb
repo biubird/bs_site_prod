@@ -122,6 +122,6 @@ Tour.create!(gig_date: tour_date('Friday, April 27 2018'), gig_time: '8:00pm', v
 
 Tour.create!(gig_date: tour_date('Saturday, May 19 2018'), gig_time: 'TBD', venue: 'Paul W. Ogle Cultural & Community Center', location: 'New Albany, IN', imgUrl: 'http://www.ius.edu/oglecenter', img: 'assets/portfolio/ogle.png')
 
-Tour.create!(gig_date: tour_date('Wednesday, December 26 2018'), gig_time: '6:00pm', venue: 'St. Louis Cathedral', location: 'New Orleans, LA', imgUrl: 'http://fqfi.org/', img: 'assets/portfolio/fqf.jpg')
+Tour.create!(gig_date: tour_date('Wednesday, December 6 2018'), gig_time: '6:00pm', venue: 'St. Louis Cathedral', location: 'New Orleans, LA', imgUrl: 'http://fqfi.org/', img: 'assets/portfolio/fqf.jpg')
 
 puts "Created #{Tour.count} tours"
