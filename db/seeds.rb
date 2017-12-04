@@ -102,6 +102,20 @@ Tour.create!(gig_date: tour_date('Saturday, November 4 2017'), gig_time: '8:00pm
 
 Tour.create!(gig_date: tour_date('Sunday, November 5 2017'), gig_time: '7:30pm', venue: 'The Ark', location: 'Ann Arbor, MI', imgUrl: 'http://www.theark.org', img: 'assets/portfolio/ark.png')
 
+Tour.create!(gig_date: tour_date('Wednesday, December 6 2017'), gig_time: '6:00pm', venue: 'St. Louis Cathedral', location: 'New Orleans, LA', imgUrl: 'http://fqfi.org/', img: 'assets/portfolio/fqf.jpg')
+
+Tour.create!(gig_date: tour_date('Saturday, January 27 2018'), gig_time: '7:30pm', venue: 'El Casino Ballroom', location: 'Tucson, AZ', imgUrl: 'http://www.elcasinoballroom.com/', img: 'assets/portfolio/elcas.jpg')
+
+Tour.create!(gig_date: tour_date('Sunday, January 28 2018'), gig_time: '7:30pm', venue: 'Musical Instrument Museum', location: 'Phoenix, AZ', imgUrl: 'http://www.themim.org/events/beausoleil-avec-michael-doucet/', img: 'assets/portfolio/mim.jpg')
+
+Tour.create!(gig_date: tour_date('Thursday, February 8 2018'), gig_time: '8:00pm', venue: 'Sellersville Theatre 1894', location: 'Sellersville, PA', imgUrl: 'https://www.ticketfly.com/purchase/event/1601390?_ga=2.52036713.130339039.1512396517-1629194827.1512396517', img: 'assets/portfolio/sellers.jpg')
+
+Tour.create!(gig_date: tour_date('Friday, February 9 2018'), gig_time: 'TBA', venue: 'Turning Point', location: 'Piermont, NY', imgUrl: 'http://www.turningpointcafe.com/events.htm', img: 'assets/portfolio/tp.jpg')
+
+Tour.create!(gig_date: tour_date('Saturday, February 10 2018'), gig_time: '8:30pm', venue: 'Rhodes on the Pawtuxet', location: 'Cranston, RI', imgUrl: 'http://www.rhodesonthepawtuxet.com/', img: 'assets/portfolio/rhodes.jpg')
+
+Tour.create!(gig_date: tour_date('Sunday, February 11 2018'), gig_time: '7:00pm', venue: 'Katharine Hepburn Cultural Arts Center', location: 'Old Saybrook, CT', imgUrl: 'http://www.katharinehepburntheater.org/events/beausoleil-avec-michael-doucet/', img: 'assets/portfolio/kate.jpg')
+
 Tour.create!(gig_date: tour_date('Thursday, March 8 2018'), gig_time: '8:00pm', venue: 'SPACE', location: 'Evanston, IL', imgUrl: 'http://www.evanstonspace.com', img: 'assets/portfolio/space.png')
 
 Tour.create!(gig_date: tour_date('Friday, March 9 2018'), gig_time: '7:30pm', venue: 'Stoughton Opera House', location: 'Stoughton, WI', imgUrl: 'http://www.stoughtonoperahouse.com/', img: 'assets/portfolio/stoughton.png')
@@ -121,7 +135,5 @@ Tour.create!(gig_date: tour_date('Friday, April 27 2018'), gig_time: '(Workshops
 Tour.create!(gig_date: tour_date('Friday, April 27 2018'), gig_time: '8:00pm', venue: 'Trinity-Pawling School', location: 'Pawling, NY', imgUrl: 'http://www.pawlingconcertseries.org', img: 'assets/portfolio/pawling.png')
 
 Tour.create!(gig_date: tour_date('Saturday, May 19 2018'), gig_time: 'TBD', venue: 'Paul W. Ogle Cultural & Community Center', location: 'New Albany, IN', imgUrl: 'http://www.ius.edu/oglecenter', img: 'assets/portfolio/ogle.png')
-
-Tour.create!(gig_date: tour_date('Wednesday, December 6 2018'), gig_time: '6:00pm', venue: 'St. Louis Cathedral', location: 'New Orleans, LA', imgUrl: 'http://fqfi.org/', img: 'assets/portfolio/fqf.jpg')
 
 puts "Created #{Tour.count} tours"
