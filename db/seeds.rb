@@ -128,12 +128,20 @@ Tour.create!(gig_date: tour_date('Friday, April 13 2018'), gig_time: '8:00pm', v
 
 Tour.create!(gig_date: tour_date('Saturday, April 14 2018'), gig_time: 'TBD', venue: 'Spring Skunk Music Festival', location: 'Greer, SC', imgUrl: 'http://albinoskunk.com/', img: 'assets/portfolio/skunk.jpg')
 
-Tour.create!(gig_date: tour_date('Thursday, April 26 2018'), gig_time: '(Workshops)TBD', venue: 'Trinity-Pawling School', location: 'Pawling, NY', imgUrl: 'http://www.pawlingconcertseries.org', img: 'assets/portfolio/pawling.png')
+# Tour.create!(gig_date: tour_date('Thursday, April 26 2018'), gig_time: '(Workshops)TBD', venue: 'Trinity-Pawling School', location: 'Pawling, NY', imgUrl: 'http://www.pawlingconcertseries.org', img: 'assets/portfolio/pawling.png')
 
-Tour.create!(gig_date: tour_date('Friday, April 27 2018'), gig_time: '(Workshops)TBD', venue: 'Trinity-Pawling School', location: 'Pawling, NY', imgUrl: 'http://www.pawlingconcertseries.org', img: 'assets/portfolio/pawling.png')
+# Tour.create!(gig_date: tour_date('Friday, April 27 2018'), gig_time: '(Workshops)TBD', venue: 'Trinity-Pawling School', location: 'Pawling, NY', imgUrl: 'http://www.pawlingconcertseries.org', img: 'assets/portfolio/pawling.png')
 
-Tour.create!(gig_date: tour_date('Friday, April 27 2018'), gig_time: '8:00pm', venue: 'Trinity-Pawling School', location: 'Pawling, NY', imgUrl: 'http://www.pawlingconcertseries.org', img: 'assets/portfolio/pawling.png')
+# Tour.create!(gig_date: tour_date('Friday, April 27 2018'), gig_time: '8:00pm', venue: 'Trinity-Pawling School', location: 'Pawling, NY', imgUrl: 'http://www.pawlingconcertseries.org', img: 'assets/portfolio/pawling.png')
+
+Tour.create!(gig_date: tour_date('Friday, April 27 2018'), gig_time: 'TBD', venue: 'New Orleans Jazz & Heritage Festival', location: 'New Orleans, LA (Fais Do-Do Stage)', imgUrl: 'http://www.nojazzfest.com/', img: 'assets/portfolio/nojazz.jpg')
+
+Tour.create!(gig_date: tour_date('Sunday, May 13 2018'), gig_time: 'TBD', venue: 'Paradise Bar and Grill', location: 'Pensacola Beach, FL', imgUrl: 'http://www.paradisebar-grill.com/', img: 'assets/portfolio/paradise.jpg')
 
 Tour.create!(gig_date: tour_date('Saturday, May 19 2018'), gig_time: 'TBD', venue: 'Paul W. Ogle Cultural & Community Center', location: 'New Albany, IN', imgUrl: 'http://www.ius.edu/oglecenter', img: 'assets/portfolio/ogle.png')
+
+Tour.create!(gig_date: tour_date('Saturday, June 16 2018'), gig_time: 'TBD', venue: 'Clearwater Great River Revival', location: 'Poughkeepsie, NY', imgUrl: 'https://www.clearwater.org/', img: 'assets/portfolio/Clearwater.png')
+
+Tour.create!(gig_date: tour_date('Sunday, August 12 2018'), gig_time: 'TBD', venue: 'Huntington Arts Festival', location: 'Huntington, NY', imgUrl: 'http://www.huntingtonarts.org/', img: 'assets/portfolio/Huntington.png')
 
 puts "Created #{Tour.count} tours"
