@@ -10,7 +10,8 @@
   }
 }
 .carousel-inner {
-  height: auto;
+  width: 100%;
+  height: 740px;
   background-color: black;
   overflow: hidden;
 }
@@ -23,8 +24,8 @@
   height: auto;
 }
 .nav-image img {
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
     margin-left: 20px;
     margin-top: 10px;
     position: fixed;
@@ -219,9 +220,10 @@ a:hover {
   margin-top: 10px;
   margin-left: 30px;
 }
-.band-mitch {
+.band-chad {
   display: inline-block;
-  width: 225px;
+  width: 160px;
+  height: auto;
   border-radius: 8px;
   margin-top: 10px;
   margin-left: 20px;
