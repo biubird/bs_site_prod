@@ -144,7 +144,7 @@ Tour.create!(gig_date: tour_date('Saturday, June 16 2018'), gig_time: 'TBD', ven
 
 Tour.create!(gig_date: tour_date('Sunday, August 12 2018'), gig_time: 'TBD', venue: 'Huntington Arts Festival', location: 'Huntington, NY', imgUrl: 'http://www.huntingtonarts.org/', img: 'assets/portfolio/Huntington.png')
 
-Tour.create!(gig_date: tour_date('August 17-19 2018'), gig_time: 'TBD', venue: 'Philadelphia Folk Festival', location: 'Upper Salford Township, PA', imgUrl: 'http://www.pfs.org/', img: 'assets/portfolio/pfs.png')
+Tour.create!(gig_date: tour_date('Saturday, August 18 2018'), gig_time: 'TBD', venue: 'Philadelphia Folk Festival', location: 'Upper Salford Township, PA', imgUrl: 'http://www.pfs.org/', img: 'assets/portfolio/pfs.png')
 
 Tour.create!(gig_date: tour_date('Friday, September 21 2018'), gig_time: '8:00pm', venue: 'The Palms', location: 'Winters, CA', imgUrl: 'http://www.palmsplayhouse.com/', img: 'assets/portfolio/palms.jpg')
 
